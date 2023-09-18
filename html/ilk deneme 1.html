@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iOS 16 Tarzı Kilit Ekranı</title>
+  <style>
+    body {
+      background-image: url("https://th.bing.com/th/id/OIG.4WKMAaMYVamahVZBOs1a?pid=ImgGn");
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: helvetica;
+    }
+
+    .lock-screen {
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+      padding: 75px;
+      text-align: center;
+      color: #fff;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .lock-screen h1 {
+      font-size: 16px;
+      margin-top: 0;
+    }
+
+    .lock-screen h2 {
+      font-size: 100px;
+      margin: 10px 0;
+    }
+
+    .lock-screen input[type="email"],
+    .lock-screen input[type="password"] {
+      padding: 10px;
+      font-size: 18px;
+      width: 100%;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 10px;
+    }
+
+    .lock-screen button {
+      padding: 10px 20px;
+      background-color: #007aff;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .lock-screen button:hover {
+      background-color: #0056b3;
+    }
+
+    .lock-screen .signup-link {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: #fff;
+      font-size: 48px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+  <script>
+    function updateTime() {
+      var now = new Date();
+      var hours = now.getHours().toString().padStart(2, '0');
+      var minutes = now.getMinutes().toString().padStart(2, '0');
+      var timeString = hours + ':' + minutes;
+      document.getElementById('time').textContent = timeString;
+    }
+
+    setInterval(updateTime, 1000);
+
+    function login() {
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+
+      // Burada kullanıcı bilgilerini kontrol etmek için sözlüğü kullanabilirsiniz.
+
+      if (email === "admin" && password === "12345") {
+        window.location.href = "giriş yapınca.html"; // Başarılı giriş durumunda yönlendirilecek sayfa
+      } else {
+        alert("Geçersiz e-posta veya şifre");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="lock-screen">
+    <h2 class="time" id="time"></h2>
+    <h1>MERHABA, HOŞGELDİNİZ</h1>
+    <input type="email" id="email" placeholder="E-posta adresi">
+    <input type="password" id="password" placeholder="Şifre">
+    <button onclick="login()">Giriş Yap</button>
+    <p class="signup-link">Hesabınız yok mu? <a href="kayit.html">Hemen Kaydolun</a></p>
+  </div>
+  <div class="logo">MEup</div>
+</body>
+</html>

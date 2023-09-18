@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iOS 9 Tarzı Kaydolma Sayfası</title>
+  <style>
+    body {
+      background-image: url("https://th.bing.com/th/id/OIG.4WKMAaMYVamahVZBOs1a?pid=ImgGn");
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .register-form {
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+      padding: 60px;
+      text-align: center;
+      color: #fff;
+      max-width: 400px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .register-form h1 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .register-form input {
+      padding: 10px;
+      font-size: 18px;
+      width: 100%;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 10px;
+    }
+
+    .register-form button {
+      padding: 10px 20px;
+      background-color: #007aff;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .register-form button:hover {
+      background-color: #0056b3;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: transparent;
+      color: #007aff;
+      border: none;
+      font-size: 16px;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: #fff;
+      font-size: 48px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+  <script>
+    function goBack() {
+      window.location.href = "ilk deneme 1.html"; // İstenilen sayfaya yönlendirme
+    }
+  </script>
+</head>
+<body>
+  <div class="register-form">
+    <h1>Kaydolma Sayfası</h1>
+    <input type="text" id="name" placeholder="İsim Soyisim">
+    <input type="email" id="email" placeholder="E-posta adresi">
+    <input type="password" id="password" placeholder="Şifre">
+    <input type="tel" id="number" placeholder="Telefon Numarası">
+    <button onclick="register()">Kaydol</button>
+    <button class="back-button" onclick="goBack()">Geri Dön</button>
+  </div>
+  <div class="logo">MEup</div>
+</body>
+</html>

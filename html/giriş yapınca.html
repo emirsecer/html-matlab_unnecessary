@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iOS Tarzında Ana Sayfa</title>
+  <style>
+    body {
+      background-image: url("https://th.bing.com/th/id/OIG.4WKMAaMYVamahVZBOs1a?pid=ImgGn");
+      background-size: cover;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      position: relative;
+    }
+
+    .app-icon {
+      width: 120px;
+      height: 120px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+
+    .app-icon span {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 5px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: #fff;
+      font-size: 24px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .custom-alert {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      padding: 20px;
+      background-color: #000000;
+      color: #ffffff;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+  </style>
+  <script>
+    function launchApp(appName) {
+      var alertDiv = document.createElement('div');
+      alertDiv.className = 'custom-alert';
+      alertDiv.innerText = 'Uygulama çalıştırıldı: ' + appName;
+      document.body.appendChild(alertDiv);
+
+      setTimeout(function() {
+        alertDiv.remove();
+      }, 2000);
+
+      // Burada istediğiniz uygulama çalıştırma işlemlerini gerçekleştirebilirsiniz
+    }
+  </script>
+
+
+</head>
+<body>
+  <div class="logo">MEup</div>
+
+  <div class="app-icon" onclick="launchApp('Mesajlar')">
+    <span>Mesajlar</span>
+  </div>
+
+  <div class="app-icon" onclick="launchApp('Aramalar')">
+    <span>Aramalar</span>
+  </div>
+
+  <div class="app-icon" onclick="launchApp('Kamera')">
+    <span>Kamera</span>
+  </div>
+
+  <div class="app-icon" onclick="launchApp('Tarayıcı')">
+    <span>Tarayıcı</span>
+  </div>
+
+  <div class="app-icon" onclick="launchApp('Game Machine')">
+    <span>Game Machine</span>
+  </div>
+
+  <div class="app-icon" onclick="launchApp('Galeri')">
+    <span>Galeri</span>
+  </div>
+
+  <div class="app-icon" onclick="launchApp('Uygulama Mağazası')">
+    <span>Uygulama Mağazası</span>
+  </div>
+
+  <div class="app-icon" onclick="launchApp('Ayarlar')">
+    <span>Ayarlar</span>
+  </div>
+
+  <div class="app-icon" onclick="launchApp('Video Player')">
+    <span>Video Player</span>
+  </div>
+  </div>
+  <div class="app-icon" onclick="launchApp('Müzik Çalar')">
+    <span>Müzik Çalar</span>
+  </div>
+  <div class="app-icon" onclick="launchApp('Saat')">
+    <span>Saat</span>
+  </div>
+  <div class="app-icon" onclick="launchApp('Notlar')">
+    <span>Notlar</span>
+  </div>
+  <div class="app-icon" onclick="launchApp('Dosya Yöneticisi')">
+    <span>Dosya Yöneticisi</span>
+  </div>
+  <div class="app-icon" onclick="launchApp('Haritalar')">
+    <span>Haritalar</span>
+  </div>
+  <div class="app-icon" onclick="launchApp('Çeviri')">
+    <span>Çeviri</span>
+  </div>
+  <div class="app-icon" onclick="launchApp('Hesap Makinesi')">
+    <span>Hesap Makinesi</span>
+  </div>
+  <div class="app-icon" onclick="launchApp('Hava Durumu')">
+    <span>Hava Durumu</span>
+  </div>
+  <div class="app-icon" onclick="launchApp('Kişiler')">
+    <span>Kişiler</span>
+  </div>
+  <div class="app-icon" onclick="launchApp('Mail')">
+    <span>Mail</span>
+  </div>
+  <div class="app-icon" onclick="launchApp('Asistan')">
+    <span>Asistan</span>
+  </div>
+  <div class="app-icon" onclick="launchApp('Takvim')">
+    <span>Takvim</span>
+  </div>
+  <div class="app-icon" onclick="launchApp('Sesli Notlar')">
+    <span>Sesli Notlar</span>
+  </div>
+  <div class="app-icon" onclick="launchApp('Pusula')">
+    <span>Pusula</span>
+  </div>
+  <div class="app-icon" onclick="launchApp('Home App')">
+    <span>Home App</span>
+  </div>
+  <div class="app-icon" onclick="launchApp('Radio')">
+    <span>Radio</span>
+  </div>
+  <div class="app-icon" onclick="launchApp('Dijital Cüzdan')">
+    <span>Dijital Cüzdan</span>
+  </div>
+  <div class="app-icon" onclick="launchApp('Görüntülü Görüşme')">
+    <span>Görüntülü Görüşme</span>
+  </div>
+  <!-- Diğer app iconları buraya ekleyebilirsiniz -->
+
+</body>
+</html>
